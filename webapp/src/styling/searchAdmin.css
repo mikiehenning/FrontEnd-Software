@@ -1,0 +1,57 @@
+.container{
+  display:grid;
+  grid-template:"topleft topmiddle topright"
+                "leftbar middlecontent  rightbar"
+                "leftbar footer  rightbar";
+}
+.logo{
+  margin-bottom:1em;
+}
+
+.b{
+  grid-area:leftbar;
+  width: 150px;
+  display: inline-block;
+  height: 50px;
+  margin-top:1em;
+}
+
+.changeButton{
+  height:25px;
+  padding:2px;
+  grid-area:bottomright;
+  width:45%;
+  margin-left:8em;
+  margin-top:5em;
+}
+
+.inputboxpassword{
+  grid-area:topright;
+  height:25px;
+}
+
+.newpassword{
+  grid-area:bottomright;
+  margin-bottom:6em;
+}
+
+.oldpassword{
+  grid-area:topright;
+  margin-top:6em;
+}
+
+.buttonclass{
+grid-area:middlecontent;
+}
+
+.button-admin{
+display:block;
+padding: 2px;
+width: 120px;
+}
+
+.button-patient{
+ grid-area:bottomright;
+ padding: 2px;
+ width: 120px;
+}
