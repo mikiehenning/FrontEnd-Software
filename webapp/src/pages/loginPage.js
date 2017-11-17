@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import PropTypes from 'prop-types';
-import 'font-awesome/css/font-awesome.min.css';
+import React, { Component } from 'react'
+import 'font-awesome/css/font-awesome.min.css'
+import { Link } from 'react-router-dom'
 
 //import styled from 'styled-components';
 
 import {
     Container, InputBox, HelpmMessage, LoginForm, SubButton, InputGroup,
     AuthPage, WelcomeParagraph, InputField, StackedInputs, SubmitButton
-} from './styleForm';
+} from '../styleForm';
 
-class TestPage extends Component {
+class loginPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,7 +19,6 @@ class TestPage extends Component {
             password: ''
         };
     }
-
 
     render() {
         return (
@@ -33,7 +31,7 @@ class TestPage extends Component {
                         id="username"
                         value={this.state.email}
                         onInput={this.changeUsername}
-                        placeholder="Email address"
+                        placeholder="User Name"
                         required
                         autoFocus
                     />
@@ -47,6 +45,7 @@ class TestPage extends Component {
                         />
                         <SubmitButton>
                             <i className="fa fa-sign-in fa-lg" />
+                            <Link to='./'> </Link>
                         </SubmitButton>
 
                     </InputGroup>
@@ -55,6 +54,6 @@ class TestPage extends Component {
                 <HelpmMessage>Corstra Navigation Page</HelpmMessage>
             </AuthPage>
         );
-    }; //no semi colon here before
+    };
 }
-export default TestPage2;
+export default loginPage;
