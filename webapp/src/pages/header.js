@@ -11,7 +11,8 @@ const header = () => (
                 <li><Link to='/testPage'>TestPage</Link></li>
                 <li><Link to='/searchPatient'>Search Patient</Link></li>
                 <li><Link to='/resetPassword'>reset Password</Link></li>
-                <li><Link to='/searchAdmin'>Search Admin</Link></li>
+                <li><Link to='/createPage'>Search Admin</Link></li>
+                <li><Link to='/nav'>Nav Bar</Link></li>
             </ul>
         </nav>
     </header>
