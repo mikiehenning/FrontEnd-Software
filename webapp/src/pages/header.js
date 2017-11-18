@@ -10,11 +10,15 @@ const header = () => (
                 <li><Link to='/loginPage'>Login Page</Link></li>
                 <li><Link to='/searchPatient'>Search Patient</Link></li>
                 <li><Link to='/resetPassword'>reset Password</Link></li>
+
                 <li><Link to='/searchAdmin'>Search Admin</Link></li>
                 <li><Link to='/MNAtest'>Mini-Nutritional Assessment</Link></li>
                 <li><Link to='/wagnerScaleTest'>Wagner Scale Test</Link></li>
                 <li><Link to='/testSelectionPage'>Test Selection Page</Link></li>
                 <li><Link to='/createAccount'>Create Account Page</Link></li>
+
+                <li><Link to='/createPage'>Search Admin</Link></li>
+                <li><Link to='/nav'>Nav Bar</Link></li>
             </ul>
         </nav>
     </header>
