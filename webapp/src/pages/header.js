@@ -8,10 +8,9 @@ const header = () => (
             <ul>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/loginPage'>Login Page</Link></li>
-                <li><Link to='/searchPatient'>Search Patient</Link></li>
                 <li><Link to='/resetPassword'>reset Password</Link></li>
 
-                <li><Link to='/searchAdmin'>Search Admin</Link></li>
+                <li><Link to='/createPage'>Create Admin Page</Link></li>
                 <li><Link to='/MNAtest'>Mini-Nutritional Assessment</Link></li>
                 <li><Link to='/wagnerScaleTest'>Wagner Scale Test</Link></li>
                 <li><Link to='/testSelectionPage'>Test Selection Page</Link></li>

@@ -2,18 +2,14 @@ import React from 'react';
 import '../styling/resetPassword.css';
 //import Logo from './Logo.jpg';
 
-
-
 const resetPassword = () => (
-
 
     <body>
     <div class="container">
     
         <div class="leftside">
-        <div class="logo">LOGO
-        
-        </div>
+                <div class="logo">LOGO </div>
+
         <div class="b">
             <label class="lab">Welcome,</label>
             <button type="button" class="b">LOGOUT</button>
@@ -33,17 +29,13 @@ const resetPassword = () => (
                 <input className="inputboxpassword" type="text" />
              </div>
 
-  
-            <input className="changeButton" type="submit" value="Confirm Password" />
+              <input className="changeButton" type="submit" value="Confirm Password" />
          </form>
-
-            
+  
              <button type="button" class="bChange">CHANGE PASSWORD</button>
-             </form>
-        
      
 
     </div >
-    </body>
+ </body>
 )
 export default resetPassword
