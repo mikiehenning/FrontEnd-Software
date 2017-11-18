@@ -5,6 +5,8 @@ import '../styling/resetPassword.css';
 
 
 const resetPassword = () => (
+
+
     <body>
     <div class="container">
     
@@ -16,22 +18,31 @@ const resetPassword = () => (
             <label class="lab">Welcome,</label>
             <button type="button" class="b">LOGOUT</button>
         </div>
+
         </div>
         <form class="inputform">
-            <div class="oldpassword">
-                <label class="label">Old Password: </label>
-                <input class="inputboxpassword" type="text" />
+            <div className="oldpassword">
+                <label className="label">Old Password: </label>
+                <input className="inputboxpassword" type="text" />
             </div>
 
             <div class="newpassword">
-                 <label class="label">New Password: </label>
-                 <input class="inputboxpassword" type="text" />
+                <label className="label">New Password: </label>
+                <input className="inputboxpassword" type="text" /><br />
+                <label className="label" >Confirm New Password: </label>
+                <input className="inputboxpassword" type="text" />
              </div>
+
+  
+            <input className="changeButton" type="submit" value="Confirm Password" />
+         </form>
+
             
              <button type="button" class="bChange">CHANGE PASSWORD</button>
              </form>
         
      
+
     </div >
     </body>
 )

@@ -1,19 +1,15 @@
 import React from 'react';
 import '../styling/searchPatient.css';
+import { Link } from 'react-router-dom';
 
 const searchPatient = () => (
     <div className="container">
 
-
         <div className="logo"> LOGO </div>
         <div className="b">
             <label className="lab">Welcome,</label>
-            <button type="button" className="b">
-                Change Password
-            </button>
-            <button type="button" className="b">
-                Logout
-            </button>
+            <button type="button" className="b"><Link to='resetPassword'>Change Password</Link></button>
+            <button type="button" className="b">Logout</button>
         </div>
 
         <div className="class">
