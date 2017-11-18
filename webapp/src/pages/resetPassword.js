@@ -3,7 +3,9 @@ import '../styling/resetPassword.css';
 
 const resetPassword = () => (
     <div className="container">
-        <div className="logo">LOGO</div>
+        <div class="leftside">
+            <div className="logo">LOGO</div>
+            </div>
         <div className="b">
             <label className="lab">Welcome,</label>
             <button type="button" className="b">Logout</button>

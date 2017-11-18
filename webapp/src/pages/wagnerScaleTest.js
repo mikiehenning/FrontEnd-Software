@@ -9,7 +9,7 @@ class wagnerScaleTest extends Component {
     constructor() {
         super();
         this.state = {
-            input: "11",
+            input: "",
             info: " ",
         };
     }
