@@ -3,12 +3,12 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './home'
 import loginPage from './loginPage'
 import searchPatient from './searchPatient'
-import searchAdmin from './searchAdmin'
+import createPage from './createPage'
 import resetPassword from './resetPassword'
 import MNAtest from './MNAtest'
 import wagnerScaleTest from './wagnerScaleTest'
 import testSelectionPage from './testSelectionPage'
-import createAccount from './createAccount
+import createAccount from './createAccount'
 import nav from './nav';
 
 // The Main component renders one of the three provided

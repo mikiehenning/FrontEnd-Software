@@ -39,7 +39,6 @@ const resetPassword = () => (
 
             
              <button type="button" class="bChange">CHANGE PASSWORD</button>
-             </form>
         
      
 
