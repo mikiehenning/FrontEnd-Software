@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
+import Response from './response'
 
 class responseLabel extends Component {
+
     handleChange(e) {
         const input = e.target.value;
-        this.props.changeInput();
+        this.props.changeInput(input);
+
+
     }
 
     render() {
         
         return (
             <div>
-                <label>{this.props.input}</label>
-                <input type="radio" onClick={this.handleChange.bind(this)} name="WSD" value="2" /> Ulcers are deeper, and may extend to tendons or bones  < br />
-                <input type="radio" onClick={this.handleChange.bind(this)} name="WSD" value="3" /> Ulcers contain an abscess or osteomyelitis < br />
+                <Response input={this.props.input}  />
+                <input onChange={this.handleChange.bind(this)} value={this.props.title} input={this.props.input} />
+
 
             </div>
         );
