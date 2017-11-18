@@ -8,22 +8,29 @@ import resetPassword from './resetPassword'
 import MNAtest from './MNAtest'
 import wagnerScaleTest from './wagnerScaleTest'
 import testSelectionPage from './testSelectionPage'
-import createAccount from './createAccount'
+import createAccount from './createAccount
+import nav from './nav';
 
-// The Main component renders one of the many provided
-// Routes (provided that one matches).
+// The Main component renders one of the three provided
+// Routes (provided that one matches). Both the /roster
+// and /schedule routes will match any pathname that starts
+// with /roster or /schedule. The / route will only match
+// when the pathname is exactly the string "/"
+
 const main = () => (
     <main>
         <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/loginPage' component={loginPage} />
             <Route path='/searchPatient' component={searchPatient} />
-            <Route path='/searchAdmin' component={searchAdmin} />
+            <Route path='/createPage' component={createPage} />
             <Route path='/resetPassword' component={resetPassword} />
             <Route path='/MNAtest' component={MNAtest} />
             <Route path='/wagnerScaleTest' component={wagnerScaleTest} />
             <Route path='/testSelectionPage' component={testSelectionPage} />
             <Route path='/createAccount' component={createAccount} />
+
+            <Route path='/nav' component={nav}/>
         </Switch>
     </main>
 )
