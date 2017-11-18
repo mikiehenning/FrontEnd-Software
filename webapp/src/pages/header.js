@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 { /* this will only be here while we are testing all the pages, after page testing is done it will be removed and navigation will only be done through the webpage */}
-// The Header creates links that can be used to navigate
-// between routes.
+// The Header creates links that can be used to navigate between routes.
 const header = () => (
     <header>
         <nav>
