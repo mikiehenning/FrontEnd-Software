@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\pages"
+    "\\src\\pages",
+    "\\src\\styling"
   ],
   "SelectedNode": "\\src\\pages\\wagnerScaleTest.js",
   "PreviewInSolutionExplorer": false
