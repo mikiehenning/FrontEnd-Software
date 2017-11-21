@@ -254,14 +254,53 @@ const bates = () => (
 
 
 
- <button id= "get" type="button" onclick= "myFirst()" >Submit</button>
+ <button id= "get" type="button" onclick= "myFirst()" >Submit<script> 
+
+
+
+{/* calculates total sum but does store it yet, order of additon is required */}
+
+$('#get').on('change', function() {
+
+
+    alert(parseInt($('input[name="QA"]:checked', '#bate').val()) 
+    +parseInt($('input[name="QB"]:checked', '#bate').val()) 
+    + parseInt($('input[name="QC"]:checked', '#bate').val())
+    + parseInt($('input[name="QM"]:checked', '#bate').val())
+    + parseInt($('input[name="QD"]:checked', '#bate').val())
+    + parseInt($('input[name="QE"]:checked', '#bate').val())
+    + parseInt($('input[name="QF"]:checked', '#bate').val())
+    + parseInt($('input[name="QG"]:checked', '#bate').val())
+    +parseInt($('input[name="QH"]:checked', '#bate').val()) 
+    + parseInt($('input[name="QI"]:checked', '#bate').val())
+    + parseInt($('input[name="QL"]:checked', '#bate').val())
+    + parseInt($('input[name="QJ"]:checked', '#bate').val())
+    + parseInt($('input[name="QK"]:checked', '#bate').val()) 
+    )
+    
+    
+    });
+   
+   
+    
+
+
+
+
+
+
+
+
+ </script></button>
+ <input type= "submit"/>
  <script> 
 
 
 
 {/* calculates total sum but does store it yet, order of additon is required */}
 
-$('#bate input').on('change', function() {
+$('#get').on('change', function() {
+
 
     alert(parseInt($('input[name="QA"]:checked', '#bate').val()) 
     +parseInt($('input[name="QB"]:checked', '#bate').val()) 
