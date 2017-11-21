@@ -5,6 +5,7 @@ import testPage from './testPage'
 import searchPatient from './searchPatient'
 import searchAdmin from './searchAdmin'
 import resetPassword from './resetPassword'
+import bates from './bates'
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -18,7 +19,8 @@ const main = () => (
             <Route path='/testPage' component={testPage} />
             <Route path='/searchPatient' component={searchPatient} />
             <Route path='/searchAdmin' component={searchAdmin} />
-            <Route path='/resetPassword' component={resetPassword} />
+            <Route path='/resetpassword' component={resetPassword} />
+            <Route path='/bates' component={bates} />
         </Switch>
     </main>
 )

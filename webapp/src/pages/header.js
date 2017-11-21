@@ -12,6 +12,7 @@ const header = () => (
                 <li><Link to='/searchPatient'>Search Patient</Link></li>
                 <li><Link to='/resetPassword'>reset Password</Link></li>
                 <li><Link to='/searchAdmin'>Search Admin</Link></li>
+                <li><Link to='/bates'>bates</Link></li>
             </ul>
         </nav>
     </header>
