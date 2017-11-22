@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import './home.css'
+import '../styling/home.css'
 
 class testSelectionPage extends Component {
     render() {
@@ -10,7 +10,6 @@ class testSelectionPage extends Component {
                     <Link className='button' to='./'>Pressure Wound Test</Link>
                     <Link className='button' to='./wagnerScaleTest'>Wagner Scale Test</Link>
                     <Link className='button' to='./MNAtest'>Mini-Nutritional Assessment</Link>
-                    <Link className='button' to='./'>Pressure Wounds Test</Link>
             </div>
         );
     };

@@ -37,6 +37,7 @@ h1.bold{
 li.li-default {
     font-family: Helvetica;
     text-align: left;
+    font-size:9px;
 }
 
 ul.ul-default {

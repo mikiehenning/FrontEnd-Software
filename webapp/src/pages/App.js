@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "./header";
 import Main from "./main";
-import './App.css';
+import '../styling/App.css';
 
 const App = () => (
     <div>

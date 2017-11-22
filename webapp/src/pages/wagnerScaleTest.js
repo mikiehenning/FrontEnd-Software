@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import ResponseLabel from './responseLabel'
 import Response from './response'
-import './home.css'
+import '../styling/home.css'
 
 class wagnerScaleTest extends Component {
 
@@ -11,19 +11,22 @@ class wagnerScaleTest extends Component {
         this.state = {
             input: "",
             info: " ",
+            infoText: "",
         };
     }
 
     updateInput(e) {
         console.log(e.target.value);
         const input = e.target.value;
-        this.changeInput(input);
+        this.displayResponse(input);
     }
 
-    changeInput(input) {
+    displayResponse(input) {
         var info = "";
+        var infoText = "Wound Feedback:";
         this.setState({ input });
-        if (input=="0"){
+        this.setState({ infoText });
+        if (input === "0"){
             info = <div>
                 <h1 class="bold">Patient is classified with grade 0 diabetes.</h1>
             <ul>
@@ -33,7 +36,7 @@ class wagnerScaleTest extends Component {
             </ul>
             </div>
 
-        } else if (input == "1") {
+        } else if (input === "1") {
             info = <div>
                 <h1 class="bold">Patient is classified with grade 1 diabetes.</h1>
                 <ul>
@@ -43,7 +46,7 @@ class wagnerScaleTest extends Component {
                 </ul>
             </div>
 
-        } else if (input == "2"){
+        } else if (input === "2"){
             info = <div>
                 <h1 class="bold">Patient is classified with grade 2 diabetes.</h1>
                 <ul>
@@ -54,7 +57,7 @@ class wagnerScaleTest extends Component {
                 </ul>
             </div>
 
-        } else if (input == "3"){
+        } else if (input === "3"){
             info = <div>
                 <h1 class="bold">Patient is classified with grade 3 diabetes.</h1>
                 <ul>
@@ -64,7 +67,7 @@ class wagnerScaleTest extends Component {
                 </ul>
             </div>
 
-        } else if (input == "4"){
+        } else if (input === "4"){
             info = <div>
                 <h1 class="bold">Patient is classified with grade 4 diabetes.</h1>
                 <ul>
@@ -73,7 +76,7 @@ class wagnerScaleTest extends Component {
                 </ul>
             </div>
 
-        } else if (input == "5"){
+        } else if (input === "5"){
             info = <div>
                 <h1 class="bold">Patient is classified with grade 5 diabetes.</h1>
                 <ul>
@@ -107,7 +110,7 @@ class wagnerScaleTest extends Component {
                     {/* potentially swap this submit button out for an actual link button with a function to interface to the backend*/}
                     <input id="submit_button" type="submit" value="Sumbit form" />
                 </form>
-                <Response input={this.state.input} info={this.state.info} />
+                <Response input={this.state.input} info={this.state.info} infoText={this.state.infoText} />
                 {/* show test feedback here based upon what they select*/}
             </div>
 
