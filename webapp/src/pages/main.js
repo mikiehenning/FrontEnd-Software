@@ -10,7 +10,7 @@ import testSelectionPage from './testSelectionPage'
 import createAccount from './createAccount'
 import nav from './nav'
 import createPage from './createPage'
-
+import linegraph from './linegraph'
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
 // and /schedule routes will match any pathname that starts
@@ -29,7 +29,7 @@ const main = () => (
             <Route path='/wagnerScaleTest' component={wagnerScaleTest} />
             <Route path='/testSelectionPage' component={testSelectionPage} />
             <Route path='/createAccount' component={createAccount} />
-
+            <Route path='/linegraph' component={linegraph}/>
             <Route path='/nav' component={nav}/>
         </Switch>
     </main>
