@@ -1,13 +1,8 @@
 import React from 'react'; 
 import $ from 'jquery';
 
-
-
 const bates = () => (
     
-
-
-     
 <form id="bate" action="#" method="POST" encType="multipart/form-data">
 
 
