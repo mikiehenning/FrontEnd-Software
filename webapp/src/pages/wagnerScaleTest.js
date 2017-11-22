@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import ResponseLabel from './responseLabel'
 import Response from './response'
 import '../styling/home.css'
 
@@ -28,7 +27,7 @@ class wagnerScaleTest extends Component {
         this.setState({ infoText });
         if (input === "0"){
             info = <div>
-                <h1 class="bold">Patient is classified with grade 0 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 0 diabetes.</h1>
             <ul>
                 <li>The Patient has diabetes.</li>
                 <li> there are no signs of any damage or ulceration on the feet. </li>
@@ -38,7 +37,7 @@ class wagnerScaleTest extends Component {
 
         } else if (input === "1") {
             info = <div>
-                <h1 class="bold">Patient is classified with grade 1 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 1 diabetes.</h1>
                 <ul>
                     <li>The patient has developed a superficial ulcer, ulcer does not involve any deep tissue or full-thickness tissue destruction.</li>
                     <li>The patient should be able to close this wound with appropriate management of diabetes, wound care and offloading pressure.</li>
@@ -48,7 +47,7 @@ class wagnerScaleTest extends Component {
 
         } else if (input === "2"){
             info = <div>
-                <h1 class="bold">Patient is classified with grade 2 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 2 diabetes.</h1>
                 <ul>
                     <li>The ulcer involces deep tissue destruction that may involve muscle bone or tendon.</li>
                     <li>Aggressive treatment is necessary to prevent complications such as amputation.</li>
@@ -59,7 +58,7 @@ class wagnerScaleTest extends Component {
 
         } else if (input === "3"){
             info = <div>
-                <h1 class="bold">Patient is classified with grade 3 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 3 diabetes.</h1>
                 <ul>
                     <li>The ulcer involces gangrene or a deep tissue abscess.</li>
                     <li>There is potential for the loss of a limb.</li>
@@ -69,7 +68,7 @@ class wagnerScaleTest extends Component {
 
         } else if (input === "4"){
             info = <div>
-                <h1 class="bold">Patient is classified with grade 4 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 4 diabetes.</h1>
                 <ul>
                     <li>The ulcer involves gangrene of the forefoot.</li>
                     <li>Limb salvage is the goal of the treatment</li>
@@ -78,7 +77,7 @@ class wagnerScaleTest extends Component {
 
         } else if (input === "5"){
             info = <div>
-                <h1 class="bold">Patient is classified with grade 5 diabetes.</h1>
+                <h1 className="bold">Patient is classified with grade 5 diabetes.</h1>
                 <ul>
                     <li>The ulcer invovles gangrene of a major portion of the foot.</li>
                     <li>The possiblity of limb loss increases</li>

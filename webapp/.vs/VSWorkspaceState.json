@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\public",
     "\\src",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\pages\\wagnerScaleTest.js",
+  "SelectedNode": "\\src\\pages\\testSelectionPage.js",
   "PreviewInSolutionExplorer": false
 }

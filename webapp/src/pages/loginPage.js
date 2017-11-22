@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import 'font-awesome/css/font-awesome.min.css'
-import { Link } from 'react-router-dom'
+import { Link, Redirect, Route } from 'react-router-dom'
 
 //import styled from 'styled-components';
 
@@ -20,7 +20,12 @@ class loginPage extends Component {
         };
     }
 
+    checkInput() {
+        <Redirect to="/" />
+    }
+
     render() {
+
         return (
             <AuthPage subtitle="Navigating to Home Page">
                 <StackedInputs>
@@ -31,10 +36,11 @@ class loginPage extends Component {
                         id="username"
                         value={this.state.email}
                         onInput={this.changeUsername}
-                        placeholder="User Name"
+                        placeholder="email@gmail.com"
                         required
                         autoFocus
                     />
+
                     <InputGroup>
                         <InputField
                             type="password"
@@ -43,7 +49,8 @@ class loginPage extends Component {
                             placeholder="Password"
                             required
                         />
-                        <SubmitButton>
+
+                        <SubmitButton onClick={this.checkInput}>
                             <i className="fa fa-sign-in fa-lg" />
                             <Link to='./'> </Link>
                         </SubmitButton>
