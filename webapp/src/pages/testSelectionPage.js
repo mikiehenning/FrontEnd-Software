@@ -11,6 +11,7 @@ class testSelectionPage extends Component {
                     <Link className='button' to='./wagnerScaleTest'>Wagner Scale Test</Link>
                     <Link className='button' to='./MNAtest'>Mini-Nutritional Assessment</Link>
                     <Link className='button' to='./'>Pressure Wounds Test</Link>
+                    <Link className='button' to='./bates'> Bates Jensen Wound Assessment</Link>
             </div>
         );
     };
