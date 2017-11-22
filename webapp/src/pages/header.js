@@ -18,9 +18,10 @@ const header = () => (
 
                 <li><Link to='/createPage'>Search Admin</Link></li>
                 <li><Link to='/nav'>Nav Bar</Link></li>
-
+                <li><Link to='/bates'>bates</Link></li>
                 <li><Link to='/linegraph'>linegraph</Link></li>
-            </ul>
+
+          </ul>
         </nav>
     </header>
 );
