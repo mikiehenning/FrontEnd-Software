@@ -6,18 +6,21 @@ const resetPassword = () => (
 
     <body>
 
-        <label id="Header"> PASSWORD RESET </label>
+       
     <div class="container">
     
     
         <form class="inputform"  >
-        <div><label className= "label" id="advice" >Password must include a minimum of characters.<br></br><br></br>
-        One or more of each of the following:<br></br>
+        <div><label className= "label" id="advice" ><b>Password must include a minimum of 8 characters.<br></br><br></br>
+        And one or more of each of the following:</b><br></br>
 <li> lower-case letter</li><br></br>
 <li> upper-case letter</li><br></br>
 <li> number</li><br></br>
 <li> punctuation mark</li></label></div>    
             <div  id="oldpassword" >
+               
+            <label id="Header"> PASSWORD RESET </label>
+            <label> &nbsp; </label>
                 <label className="label" id="inlabel">     Old Password: </label>
                 <input className="inputboxpassword" type="text" id= "input" /><br></br>
             
