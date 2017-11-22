@@ -8,6 +8,8 @@
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17",
+    "react-simple-tooltip": "^2.0.0",
+    "react-svg-line-chart": "^1.0.6",
     "styled-components": "^2.2.3"
   },
   "scripts": {
