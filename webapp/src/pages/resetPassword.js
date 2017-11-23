@@ -39,13 +39,7 @@ const resetPassword = () => (
               
          </form>
   
-            
-<<<<<<< HEAD
-=======
              <button type="button" class="bChange">CHANGE PASSWORD</button>
-        
->>>>>>> MarleyBranch
-     
 
     </div >
  </body>

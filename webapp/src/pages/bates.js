@@ -1,5 +1,5 @@
 import React from 'react'; 
-import $ from 'jquery';
+//import $ from 'jquery';
 
 const bates = () => (
     
@@ -314,37 +314,6 @@ const bates = () => (
   <p id="insert">
   </p>
 
-
-
-
-
-  <script>
-    { /* calculates total sum but does store it yet, order of additon is required */ }
-
-    $("#submitt").on('change', function() {
-
-
-      alert(parseInt($('input[name="QA"]:checked', '#bate').val()) 
-      + parseInt($('input[name="QB"]:checked', '#bate').val())
-       + parseInt($('input[name="QC"]:checked', '#bate').val())
-        + parseInt($('input[name="QM"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QD"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QE"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QF"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QG"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QH"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QI"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QL"]:checked', '#bate').val()) 
-        + parseInt($('input[name="QJ"]:checked', '#bate').val()) 
-      + parseInt($('input[name="QK"]:checked', '#bate').val())
-
-
-      )
-
-
-    });
-
-  </script>
   <input type="submit" />
   <input type="text" name="result" id="textbox3" />
 </form>

@@ -28,13 +28,8 @@ class testSelectionPage extends Component {
                 <label>Which test do you wish to perform?</label>
                     <Link className='button' to='./'>Pressure Wound Test</Link>
                     <Link className='button' to='./wagnerScaleTest'>Wagner Scale Test</Link>
-<<<<<<< HEAD
                     <Link className='button' to='./MNAtest'>Mini-Nutritional Assessment</Link>
-                    <Link className='button' to='./'>Pressure Wounds Test</Link>
-                    <Link className='button' to='./bates'> Bates Jensen Wound Assessment</Link>
-=======
                     <button onClick={this.changePage.bind(this)} >Mini-Nutritional Assessment</button>
->>>>>>> MarleyBranch
             </div>
         );
     };
