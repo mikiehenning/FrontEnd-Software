@@ -3,8 +3,6 @@ import { Button, ButtonGroup } from 'react-bootstrap';
 import styled from 'styled-components';
 import '../styling/nav.css';
  /* export const ButtonGroup = styled.div`
-
-  
   `;*/
  
 

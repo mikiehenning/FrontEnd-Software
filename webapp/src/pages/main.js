@@ -3,15 +3,23 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './home'
 import loginPage from './loginPage'
 import searchPatient from './searchPatient'
+<<<<<<< HEAD
+=======
+import createPage from './createPage'
+>>>>>>> MarleyBranch
 import resetPassword from './resetPassword'
 import MNAtest from './MNAtest'
 import wagnerScaleTest from './wagnerScaleTest'
 import testSelectionPage from './testSelectionPage'
 import createAccount from './createAccount'
+<<<<<<< HEAD
 import nav from './nav'
 import createPage from './createPage'
 import bates from './bates'
 import linegraph from './linegraph'
+=======
+import nav from './nav';
+>>>>>>> MarleyBranch
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
