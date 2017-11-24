@@ -1,0 +1,36 @@
+#wagnerForm{
+
+    display: grid;
+    border-style:solid;
+    border-radius: 25px;
+    grid-area:topmiddle;
+    width:max;
+    height:700px;
+    border-color:#eb7c32;
+    
+    margin-right: 250px;
+    background-color: #e4e4e4;
+    
+    grid-template-columns: fit-content(100%) fit-content(100%);
+      grid-auto-rows: 1fr;
+
+}
+
+#rb{
+
+   margin-bottom: 12px;
+  
+
+}
+
+#submit_button{
+    font-size: fit-content(60%);
+    border-radius: 25px; 
+    height: 5em;
+    width:15rem;
+ margin-buttom: 30px;
+float: right;
+
+margin-right: 40px
+
+}

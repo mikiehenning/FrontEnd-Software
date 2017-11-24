@@ -22,10 +22,10 @@ class loginPage extends Component {
 
     render() {
         return (
-            <AuthPage subtitle="Navigating to Home Page">
+            <AuthPage subtitle="Welcome Please Sign in">
                 <StackedInputs>
 
-                    <InputField
+                    <InputField 
                         type="email"
                         name="uname"
                         id="username"

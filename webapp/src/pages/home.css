@@ -1,12 +1,14 @@
 .classContainer {
     display:flex;
     flex-direction: column;
-    align-items:center;
+   
+
+
 }
 
 .button {
     color:#ffffff;
-    Background:#c3ff00;
+    Background:#e67716;
     border:none;
     font-size:16px;
     border-radius:3px;
@@ -19,7 +21,7 @@
 }
 
 .button:hover:enabled {
-    background: linear-gradient(#0094ff, #808080);
+    background: linear-gradient(#00ff88, #808080);
     color: #ffffff;
     text-decoration:none;
 }

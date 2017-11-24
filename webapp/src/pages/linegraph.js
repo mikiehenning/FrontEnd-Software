@@ -29,7 +29,7 @@ export default class MyComponent extends Component {
     }
 
     return (
-      <div>
+      <div id="back" >
         
         { this.state.tooltipTrigger
           ? (

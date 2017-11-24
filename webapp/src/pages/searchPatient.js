@@ -3,20 +3,35 @@ import '../styling/searchPatient.css';
 import { Link } from 'react-router-dom';
 
 const searchPatient = () => (
-    <div className="container">
-
-        <div className="logo"> LOGO </div>
-        <div className="b">
-            <label className="lab">Welcome,</label>
-            <button type="button" className="b"><Link to='resetPassword'>Change Password</Link></button>
-            <button type="button" className="b">Logout</button>
-        </div>
-
-        <div className="class">
+    <div className="containerl" >
+<div class="container">
+    
+    
+        <form class="searchform"  >
+          
+            <div  id="oldpassword" >
+               
+            <label id="Header"> Search by </label>
+            <label> &nbsp; </label>
+                <label className="label" id="inlabel">  SSN </label>
+                <input className="inputboxpassword" type="text" id= "input" /><br></br>
+            
+                <label> <b><label> --or </label></b> </label>
+            
+                <label className="label" id="inlabel">     First Name </label>
+                <input className="inputboxpassword" type="text" id= "input" />
+                
+                <br></br>
+                <label className= "label" id="inlabel" >Last Name </label>
+                <input className="inputboxpassword" type="text" id= "input" />
+                <input id="changeButton" type="submit" value="SEARCHS" />
+             
+             </div>
+             
+             <div className="class">
                              {/*come back to replace the function here with the actual functionality*/}
-            <input type="search" id="myInput" onKeyUp="myFunction()" placeholder="search for patient..." className="searchPatient" />
 
-            <table className="blueTable">
+            <table className="blueTable" border="0">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -63,10 +78,26 @@ const searchPatient = () => (
                             <td>cell1_8</td>
                             <td>cell2_8</td>
                         </tr>
+                        <tr>
+                            <td>cell1_8</td>
+                            <td>cell2_8</td>
+                        </tr>
+                        <tr>
+                            <td>cell1_8</td>
+                            <td>cell2_8</td>
+                        </tr>
                     </tbody>
                 </table>
     
   </div>
+         </form>
+  
+            
+     
+
+    </div >
+
+       
 </div>
 
     ) 
