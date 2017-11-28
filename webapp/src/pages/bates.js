@@ -1,5 +1,5 @@
 import React from 'react'; 
-import $ from 'jquery';
+//import $ from 'jquery';
 import '../styling/mna.css'
 
 var x;
