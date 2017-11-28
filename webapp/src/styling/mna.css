@@ -9,9 +9,16 @@
     width: 100%;
     }
 
+    input[type="radio"]{
+font-size:60px;
+margin-bottom: 10px;
+ height:35px; width:35px;
+    }
+
 label{
 grid-column: 1/2;
-
+margin-top: auto;
+margin-bottom: auto;
 font-size:large; 
 }
 
@@ -21,26 +28,43 @@ grid-column: 2/4;
 padding-bottom: 10px;
 }
 
+input[type="text"]{
+  font-size:large;
+
+
+height: 20px;
+}
+
+#textes{
+  grid-column: 2/4;
+ 
+}
+
 
     
     
     
     .mnaform{
+      padding: 40px 40px 40px 40px;
       display: grid;
+      border-width: 15px;
       grid-gap: 25px 10px;
-      border-style:solid;
+      border-style:none;
       border-radius: 25px;
       grid-area:topleft;
       width:fit-content(100%);
       height:fit-content(100%);
       border-color:#eb7c32;
     margin-right: 520px;
-      background-color: #e4e4e4;
+      background-color: rgb(224, 216, 216);
      
-      grid-template-columns:   50%;
+      grid-template-columns:   fit-content(100%);
                    
     }
 
+    #size{
+ 
+    }
     
 
 
@@ -54,7 +78,7 @@ padding-bottom: 10px;
     box-sizing: border-box;
     margin-left:5em;
     margin-top:0em;
-    border: 0px solid red;
+    border: 0px solid rgba(0, 0, 0, 0.829);
     border-radius: 8px;
     font-family: "Times New Roman", Times, serif;
     font-size:large;
@@ -62,7 +86,10 @@ padding-bottom: 10px;
     
    
     
-    
+    #class{
+background-color: rgba(0, 0, 0, .7)
+
+    }
 
 
     
@@ -92,11 +119,12 @@ padding-bottom: 10px;
     
     #Header{
       
-      margin-left: 500px; 
+      margin-left: auto;
+      margin-right: auto; 
       text-align: right;
     
      
-      font-size:xx-large;
+      font-size:2.5em;
       font-family: "Times New Roman", Times, serif;
     }
 
@@ -107,5 +135,14 @@ background-color: #9c9a99;
       margin-bottom: 5px;
     }
     
+
+    select{
+      height:35px;
+      line-height:40px;
+      font-size: 30px;
+     
+
+
+    }
    
     

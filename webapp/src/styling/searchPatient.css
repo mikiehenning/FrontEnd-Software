@@ -1,5 +1,5 @@
 .containerl {
-    display: grid;
+    display: inline;
     grid-template-columns: 90% 10%;
 	grid-auto-rows: 1fr;
 }
@@ -34,7 +34,7 @@ table.blueTable {
 
     table.blueTable td, table.blueTable th {
        border-radius: 25px;
-        border: 2px solid rgb(211, 72, 72);
+        border: none;
         padding: 3px 2px;
     }
 
@@ -44,7 +44,7 @@ table.blueTable {
     }
 
     table.blueTable tr:nth-child(even) {
-        background: rgb(208, 245, 242), 208, 245);
+        background: rgb(208, 245, 242), 208, 245)
     }
 
     table.blueTable thead {
@@ -95,9 +95,18 @@ table.blueTable {
                 border-radius: 5px;
             }
 
+.containerl{
+display:inline-block;
+align-content: center;
+    background-color:  rgba(0, 0, 0, .7);
+    height: 9000px;
+    width:100%;
+}
 .container{
 
-  display: grid;
+width: max;  
+display: grid;
+  
   
   grid-template-rows: 100px 1fr auto;
   grid-template-columns: 1fr 200px;
@@ -129,31 +138,21 @@ button.b{
   border-style:solid;
   border-radius: 25px;
   grid-area:topmiddle;
-  width:max;
-  height:700px;
+  width:fit-content(100%);
   border-color:#eb7c32;
-  margin-left:0em;
+  margin-left:auto;
+  margin-right:50px;
   background-color: rgb(175, 172, 172);
   
-  grid-template-columns: 40% fit-content(100%);
-	grid-auto-rows: 1fr;
+  grid-template-rows: 40% fit-content(100%);
+	grid-auto-columns: 1fr;
   
                
 }
 
-#input{width: 70;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 4px;
-box-sizing: border-box;
-margin-left:5em;
-margin-top:0em;
-border: 0px solid red;
-border-radius: 8px;
-font-family: "Times New Roman", Times, serif;
-font-size:large;
+#input{
+
+margin-top: 200px;
 }
 
 #advice{width: 50;
@@ -172,10 +171,9 @@ font-size:large;
 
 label{
   display: block;
-  width: 100%;
-  font: normal 12px ;
+
   
-  float: left; width: 15em;
+   
   
   }
 
@@ -199,14 +197,13 @@ label{
 
 }
 
-
-#inputboxpassword{
+.inputboxpassword{
   grid-area: bottomright;
   height:25px;
   width:20em;
   border-color:blue;
   margin-left:15em;
-  margin-top:15em;
+  margin-top:15px;
   background-color: yellow;
 
 }
@@ -240,7 +237,7 @@ label{
 
 #Header{
   text-align: left;
-
+grid-area: left;
  
   font-size:xx-large;
   font-family: "Times New Roman", Times, serif;
@@ -271,3 +268,17 @@ padding-top: 2em;
      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(0,162,255,1) 57%, rgba(0,162,255,1) 100%);
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00a2ff', GradientType=0 );
   }
+
+  #top{
+
+display: inline-flex;
+grid-template-columns: 1fr;
+grid-template-rows:1fr; 
+
+  }
+
+button{
+    margin-top:10px;
+    border-radius: 15px;
+
+}

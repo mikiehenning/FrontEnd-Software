@@ -7,33 +7,82 @@ const bates = () => (
     
 
 
-  <div id="class" className="classContainer" >
+  <div id="class" className="classContainer" background>
          
   <label id="Header">Bates Jensen </label>
   <div class="container">
-
+ 
     <form class="mnaform" action="#" method="POST" encType="multipart/form-data">
+ 
+ 
+   
 
+
+<div class="classContainer">
+
+
+<label>LOCATION</label>
+
+
+
+<select>
+  <option value="Sacrum and coccyx">Sacrum and coccyx</option>
+  <option value="Trochanter">Trochanter</option>
+  <option value="Ischail">Ischail</option>
+  <option value="Lateral Ankle<">Lateral Ankle</option>
+  <option value="Medial Ankle">Medial Ankle</option>
+  <option value="Heel">Heel </option>
+  <option value="Other">Other </option>
+
+
+</select>
+
+
+
+
+
+  <label>SHAPE</label>
+<select>
+<option value="Irregular">Irregular</option>
+<option value="Round/Oval">Round/Oval</option>
+<option value="Linear/Elongated">Linear/Elongated</option>
+<option value="Bowl/Boat">Bowl/Boat</option>
+<option value="Square/Rectagle">Square/Rectagle</option>
+<option value="Butterfly">Butterfly </option>
+<option value="Other"><input type="text" value="If other specify" /></option>
+
+
+</select>
+
+
+<label>SIDE</label >
+<select>
+<option value="left">LEFT</option>
+<option value="right">RIGHT</option>
+
+
+</select>
+
+
+</div>
+<div class= "classContainer" id="textes">
+  <label>If Other Please Specify</label>
+<input type="text" />
+<label>&nbsp;</label>
+    <input id="sdfds" type="text" />
+    <label>&nbsp;</label>
+    <label>&nbsp;</label>
+</div>
 
 
       {/*values || severe decrease in food intake = 0 || moderate dec in food intake = 1 || no dec in food intake = 2 */}
-      <label htmlFor="name">Size</label>
+      <div class="container">
+      <label id="name">Size (cm)<sup>2</sup> </label>
+      <input id="size" type="text" />
       
       <br></br>
-
-      <div>
-      <input type="radio" class="calcs" name="QA" value="1" checked/>Length x width less than 25%4 sq cm
-      <br></br>
-      <input type="radio" class="calc" name="QA" value="2" /> 2 = Length x width 4-- less than 25%16 sq cm 
-      <br></br>
-      <input type="radio" class="calc" name="QA" value="3" /> Length x width 16.1-- less than 25%36 sq cm 
-      <div> </div>
-      <input type="radio" class="calc" name="QA" value="4" /> Length x width 36.1-- less than 25%80 sq cm 
-      <br></br>
-      <input type="radio" class="calc" name="QA" value="5" /> Length x width >80 sq cm 
-      <br></br>
-    
       </div>
+      
 
       {/*values || weight loss > 3kg = 0 || does not know = 1 || weight loss between 1/3kg = 2 || no weight loss = 3 */}
       <label htmlFor="email"> Depth</label>
@@ -43,7 +92,7 @@ const bates = () => (
       <br></br>
       <input type="radio" class="calc" name="QB" value="2" /> Partial thickness skin loss involving epidermis /or dermis 
       <div></div>
-      <input type="radio" class="calc" name="QB" value="3" />Full thickness skin loss involving damage or necrosis of subcutaneous tissue; may extend down to but not through underlying fascia; and/or mixed partial and full thickness and/or tissue layers obscured bygranulation tissue 
+      <input type="radio" class="calc" name="QB" value="3" />Full thickness skin loss involving damage or necrosis of subcutaneous tissue;may extend down to but not through underlying fascia 
       <br></br>
       <input type="radio" class="calc" name="QB" value="4" /> Obscured by necrosis 
         <br></br>
@@ -342,7 +391,6 @@ less than 25% wound covered
 
 
 
-
 <script>
     { /* calculates total sum but does store it yet, order of additon is required */ }
 {/*
@@ -375,6 +423,10 @@ less than 25% wound covered
 
         {/* Dynamically generate the final submission score on the bottom of the page as they fill it out, so there is some sort of feedback before they submit */}
         <input id="submit_button" type="submit" value="Sumbit form " onclick="displ"/>
+       
+   
+
+    
     </form>
 
  

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import {slide as Menu} from 'react-burger-menu';
 import {navm} from '../styleForm';
 const resetPassword = () => (
+
+<div class= "container">
 <div class= "classContianer">
      <label id="Header"> PASSWORD RESET </label>
     <body className="bodyf">
@@ -54,6 +56,7 @@ const resetPassword = () => (
 
   
 </body>
+</div>
 </div>
 )
 export default resetPassword

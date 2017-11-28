@@ -3,30 +3,17 @@ import '../styling/searchPatient.css';
 import { Link } from 'react-router-dom';
 
 const searchPatient = () => (
+
     <div className="containerl" >
 <div class="container">
-    
-    
-        <form class="searchform"  >
-          
-            <div  id="oldpassword" >
-               
-            <label id="Header"> Search by </label>
-            <label> &nbsp; </label>
-                <label className="label" id="inlabel">  SSN </label>
-                <input className="inputboxpassword" type="text" id= "input" /><br></br>
-            
-                <label> <b><label> --or </label></b> </label>
-            
-                <label className="label" id="inlabel">     First Name </label>
-                <input className="inputboxpassword" type="text" id= "input" />
+        <form class="searchform"  >       
+               <div id="top" >
+            <label id="Header"> Search </label>
+            <input  type="text" id= "input" />
+            <div><button>Create Patient</button></div></div>
                 
-                <br></br>
-                <label className= "label" id="inlabel" >Last Name </label>
-                <input className="inputboxpassword" type="text" id= "input" />
-                <input id="changeButton" type="submit" value="SEARCHS" />
              
-             </div>
+  
              
              <div className="class">
                              {/*come back to replace the function here with the actual functionality*/}
@@ -100,6 +87,6 @@ const searchPatient = () => (
        
 </div>
 
-    ) 
+    ) ;
 
 export default searchPatient

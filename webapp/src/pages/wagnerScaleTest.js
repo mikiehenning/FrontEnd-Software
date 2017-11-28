@@ -71,8 +71,8 @@ class wagnerScaleTest extends Component {
 
     render() {
         return (
-            <div className="containerl" >
-            <div className="container">
+   
+            <div id="containera">
 
               
 
@@ -101,7 +101,7 @@ class wagnerScaleTest extends Component {
                 
                 {/* show test feedback here based upon what they select*/}
             </div>
-</div>
+
         );
     };
 }
