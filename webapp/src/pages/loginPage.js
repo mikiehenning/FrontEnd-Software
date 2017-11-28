@@ -43,7 +43,7 @@ class loginPage extends Component {
                             placeholder="Password"
                             required
                         />
-                        <SubmitButton>
+                        <SubmitButton style={{marginTop:"0px"}}>
                             <i className="fa fa-sign-in fa-lg" />
                             <Link to='./'> </Link>
                         </SubmitButton>

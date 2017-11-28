@@ -42,6 +42,7 @@ export default class MyComponent extends Component {
 
         <LineChart
           activePoint={ this.state.activePoint }
+          style="margin:20px"
           data={[
             {x: 1, y: 10},
             {x: 2, y: 5},
