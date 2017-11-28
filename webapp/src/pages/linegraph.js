@@ -1,55 +1,29 @@
 import React, { Component } from 'react';
-import '../styling/linegraph.css';
-//import LineChart from './linechart';
-import LineChart from 'react-svg-line-chart'
-import Tooltip from 'react-simple-tooltip'
+//import '../styling/linegraph.css';
+//import '../styling/linegraph.css';
+import {XYPlot, XAxis, YAxis, HorizontalGridLines, LineMarkSeries,LineSeries} from 'react-vis';
+import '../react-vis/dist/style.css';
 
-export default class MyComponent extends Component {
-  constructor(props, context) {
-    super(props, context)
+const linegraph=()=>(
+<XYPlot
+  width={300}
+  height={300}
+  color="red"
+  background="black"
+  >
+  <LineMarkSeries
+  color="red"
+    data={[
+      {x: 1, y: 10},
+      {x: 2, y: 5},
+      {x: 3, y: 15},
+      {x: 7, y: 8}
+    ]}
+    />
+  <XAxis title="X" />
+  <YAxis title="Y" />
+</XYPlot>
+)
 
-    this.state = {
-      activePoint: null,
-      tooltipTrigger: null,
-    }
-  }
+export default linegraph
 
-  /*handlePointHover(point, trigger) {
-    this.setState({
-      activePoint: point,
-      tooltipTrigger: trigger,
-    })
-  }*/
-
-  render() {
-    const data = []
-
-    for (let x = 1; x <= 30; x++) {
-      data.push({ x: x, y: Math.floor(Math.random() * (40)) })
-    }
-
-    return (
-      <div>
-        
-        { this.state.tooltipTrigger
-          ? (
-            <Tooltip placement="top" trigger={ this.state.tooltipTrigger }>
-              <div>y : { this.state.activePoint.y }</div>
-              <div>x : { this.state.activePoint.x }</div>
-            </Tooltip>
-          )
-          : null
-        }
-
-        <LineChart
-          activePoint={ this.state.activePoint }
-          data={ data }
-          onPointHover={ this.handlePointHover }
-          nogrid
-        />
-      </div>
-    )
-  }
-}
-
-//        <LineChart data={this.createFakeData()} color={'#F44336'}  />

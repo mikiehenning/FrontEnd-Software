@@ -10,6 +10,7 @@
     "react-scripts": "1.0.17",
     "react-simple-tooltip": "^2.0.0",
     "react-svg-line-chart": "^1.0.6",
+    "react-vis": "^1.7.10",
     "styled-components": "^2.2.3"
   },
   "scripts": {
